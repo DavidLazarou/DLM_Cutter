@@ -1,18 +1,8 @@
-# Python
+.venv/
 __pycache__/
 *.pyc
-
-# Virtual environment
-.venv/
-
-# Secrets
+*.pyo
+*.pyd
 .env
-.env.*
-
-# DB tools / logs
-*.log
-*.sqlite3
-*.swp
-
-# PyCharm
-.idea/
+*.sqlite
+.DS_Store

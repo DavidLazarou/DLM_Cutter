@@ -26,16 +26,23 @@ fred_series = {
     "PCE": "US Personal Spending"
 }
 
+# Build PostgreSQL connection parameters
+conn_params = {
+    "host": PG_HOST,
+    "port": PG_PORT,
+    "user": PG_USER,
+    "dbname": PG_DATABASE
+}
+
+# Only include password if it's available (for CI/CD or password-based systems)
+if PG_PASSWORD:
+    conn_params["password"] = PG_PASSWORD
+
 # Connect to Postgres
-conn = psycopg2.connect(
-    host=PG_HOST,
-    port=PG_PORT,
-    user=PG_USER,
-    password=PG_PASSWORD,
-    dbname=PG_DATABASE
-)
+conn = psycopg2.connect(**conn_params)
 cur = conn.cursor()
 
+# Insert data
 for series_id, description in fred_series.items():
     data = fred.get_series(series_id)
     df = data.reset_index()
@@ -50,6 +57,7 @@ for series_id, description in fred_series.items():
             ON CONFLICT DO NOTHING
         """, (series_id, row.observation_date, row.value))
 
+# Commit and close
 conn.commit()
 cur.close()
 conn.close()
