@@ -1,0 +1,8 @@
+site_name: DLM Research Platform
+
+nav:
+  - Home: index.md
+  - Macro: macro.md
+  - Trade Ideas: ideas.md
+  - Pipelines: pipelines.md
+  - Database Schema: schema.md
