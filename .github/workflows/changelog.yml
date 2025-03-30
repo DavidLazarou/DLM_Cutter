@@ -25,11 +25,16 @@ jobs:
       - name: Generate CHANGELOG.md
         run: git-chglog -o CHANGELOG.md
 
-      - name: Commit & Push Changelog
+      - name: Commit & Push Changelog (if updated)
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
           git add CHANGELOG.md
-          git commit -m "docs: update changelog for ${{ github.ref_name }}"
-          git push
+          if git diff --cached --quiet; then
+            echo "No changes in CHANGELOG.md — skipping commit."
+          else
+            git commit -m "docs: update changelog for ${{ github.ref_name }}"
+            git push
+          fi
+
 
