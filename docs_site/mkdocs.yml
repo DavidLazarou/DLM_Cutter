@@ -6,6 +6,8 @@ nav:
   - Trade Ideas: ideas.md
   - Pipelines: pipelines.md
   - Database Schema: schema.md
+  - Changelog: changelog.md  # ✅ correct (all lowercase)
+
 
 markdown_extensions:
   - admonition
