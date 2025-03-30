@@ -1,1 +1,0 @@
--- CREATE TABLE stock_prices (...);

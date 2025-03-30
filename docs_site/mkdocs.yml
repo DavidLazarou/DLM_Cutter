@@ -6,3 +6,13 @@ nav:
   - Trade Ideas: ideas.md
   - Pipelines: pipelines.md
   - Database Schema: schema.md
+
+markdown_extensions:
+  - admonition
+
+extra_javascript:
+  - js/mathjax-config.js  # must come FIRST
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+  - stylesheets/extra.css

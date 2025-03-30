@@ -1,0 +1,28 @@
+ingest:
+  data_dir: "/Users/dave/PycharmProjects/PythonProject/PythonProject1/DLMFund/data/zacks"
+  file_name: "zacks_custom_screen_2025-04-01.csv"  # ✅ <- Add this line
+  logs_dir: "/Users/dave/PycharmProjects/PythonProject/PythonProject1/DLMFund/data/logs"
+  table_name: "zacks_screen_daily"
+  critical_columns:
+    - eg1
+    - eg2
+    - pe1
+    - pe2
+    - ps1
+    - ps2
+    - ticker
+    - report_date
+  columns_to_numeric:
+    - last_close
+    - last_yrs_eps_f0_before_nri
+    - f1_consensus_est
+    - f2_consensus_est
+    - f1_consensus_sales_est_mil
+    - q1_consensus_sales_est_mil
+    - shares_outstanding_mil
+
+database:
+  user: "dave"
+  host: "localhost"
+  port: 5432
+  dbname: "dlm_research"
