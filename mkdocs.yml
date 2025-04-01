@@ -1,4 +1,5 @@
 site_name: DLM Research Platform
+docs_dir: docs_site/docs   # <-- Add this line to fix the docs path
 
 nav:
   - Home: index.md
@@ -6,8 +7,7 @@ nav:
   - Trade Ideas: ideas.md
   - Pipelines: pipelines.md
   - Database Schema: schema.md
-  - Changelog: changelog.md  # ✅ correct (all lowercase)
-
+  - Changelog: changelog.md
 
 markdown_extensions:
   - admonition
