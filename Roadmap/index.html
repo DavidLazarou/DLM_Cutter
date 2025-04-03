@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>🗺️ DLM Research Engine – Product Roadmap - DLM Research Platform</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <link href="../stylesheets/extra.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">DLM Research Platform</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../macro/" class="nav-link">Macro</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../ideas/" class="nav-link">Trade Ideas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../pipelines/" class="nav-link">Pipelines</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../schema/" class="nav-link">Database Schema</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../changelog/" class="nav-link">Changelog</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#dlm-research-engine-product-roadmap" class="nav-link">🗺️ DLM Research Engine – Product Roadmap</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#phase-1-foundation-data-infrastructure" class="nav-link">✅ Phase 1: Foundation – Data &amp; Infrastructure</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#phase-2-signal-engine-macro-fundamental-technical" class="nav-link">🚦 Phase 2: Signal Engine – Macro + Fundamental + Technical</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#phase-3-backtesting-engine" class="nav-link">📈 Phase 3: Backtesting Engine</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#phase-4-portfolio-construction-risk" class="nav-link">💼 Phase 4: Portfolio Construction &amp; Risk</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#phase-5-option-structuring-analytics" class="nav-link">🧮 Phase 5: Option Structuring &amp; Analytics</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#phase-6-dashboards-reporting" class="nav-link">📊 Phase 6: Dashboards &amp; Reporting</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#phase-7-process-automation-feedback-loop" class="nav-link">🧠 Phase 7: Process Automation &amp; Feedback Loop</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#versioning" class="nav-link">🔄 Versioning</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#notes" class="nav-link">🔚 Notes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="dlm-research-engine-product-roadmap">🗺️ DLM Research Engine – Product Roadmap</h1>
+<blockquote>
+<p><strong>Version</strong>: 0.1<br />
+<strong>Maintainer</strong>: DLM<br />
+<strong>Status</strong>: Active<br />
+<strong>Target User</strong>: Myself (Portfolio Manager, Quant Developer, Trader)<br />
+<strong>Objective</strong>: Complete full-stack macro-aware signal and trade structuring engine</p>
+</blockquote>
+<hr />
+<h2 id="phase-1-foundation-data-infrastructure">✅ Phase 1: Foundation – Data &amp; Infrastructure</h2>
+<table>
+<thead>
+<tr>
+<th>Task</th>
+<th>Description</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PostgreSQL setup</td>
+<td>Create clean schema for macro, fundamentals, prices, technicals</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Data ingestion scripts</td>
+<td>Automate ingestion from FRED, Zacks, Yahoo, IBKR, etc.</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Cron automation</td>
+<td>Set up daily job runner for updates and processing</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Data audit logs</td>
+<td>Track data ingestion success/failure, row counts</td>
+<td>🔄 In Progress</td>
+</tr>
+<tr>
+<td>Point-in-time handling</td>
+<td>Ensure no future data leakage (earnings, estimates, etc.)</td>
+<td>🔄</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="phase-2-signal-engine-macro-fundamental-technical">🚦 Phase 2: Signal Engine – Macro + Fundamental + Technical</h2>
+<table>
+<thead>
+<tr>
+<th>Task</th>
+<th>Description</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Signal YAML/JSON config</td>
+<td>Define reusable signal templates (e.g. PE + EPS + ISM)</td>
+<td>🔜</td>
+</tr>
+<tr>
+<td>Macro regime tagging</td>
+<td>Detect macro environments (e.g., Goldilocks, Reflation)</td>
+<td>🔄</td>
+</tr>
+<tr>
+<td>Technical indicator builder</td>
+<td>Compute moving averages, MACD, RSI, vol</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Combined signal generator</td>
+<td>Merge macro, fundamental, technical filters</td>
+<td>🔄</td>
+</tr>
+<tr>
+<td>Signal audit log</td>
+<td>Store historical signals and version them</td>
+<td>🔜</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="phase-3-backtesting-engine">📈 Phase 3: Backtesting Engine</h2>
+<table>
+<thead>
+<tr>
+<th>Task</th>
+<th>Description</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Backtest loop</td>
+<td>Evaluate signals with transaction costs, drawdown, Sharpe</td>
+<td>🔄</td>
+</tr>
+<tr>
+<td>Rolling performance metrics</td>
+<td>Track signal performance by regime and date range</td>
+<td>🔜</td>
+</tr>
+<tr>
+<td>Hit rate and attribution</td>
+<td>Win %, avg win/loss, regime attribution</td>
+<td>🔜</td>
+</tr>
+<tr>
+<td>Trade log integration</td>
+<td>Link signals to executed trades</td>
+<td>🔜</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="phase-4-portfolio-construction-risk">💼 Phase 4: Portfolio Construction &amp; Risk</h2>
+<table>
+<thead>
+<tr>
+<th>Task</th>
+<th>Description</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Position sizing logic</td>
+<td>Size by conviction, vol, beta, VaR</td>
+<td>🔜</td>
+</tr>
+<tr>
+<td>Long/short balancing</td>
+<td>Ensure hedged book by sector/market cap</td>
+<td>🔜</td>
+</tr>
+<tr>
+<td>Portfolio risk metrics</td>
+<td>Track beta, sector exposure, drawdown, VaR</td>
+<td>🔜</td>
+</tr>
+<tr>
+<td>Integration with options tool</td>
+<td>Pass signals into option structuring logic</td>
+<td>🔜</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="phase-5-option-structuring-analytics">🧮 Phase 5: Option Structuring &amp; Analytics</h2>
+<table>
+<thead>
+<tr>
+<th>Task</th>
+<th>Description</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Options pricing engine</td>
+<td>Build/fetch live prices, compute Greeks</td>
+<td>🔄</td>
+</tr>
+<tr>
+<td>Strategy builder</td>
+<td>Structure verticals, calendars, spreads</td>
+<td>🔄</td>
+</tr>
+<tr>
+<td>Breakeven and risk-reward charts</td>
+<td>Visual output for trade review</td>
+<td>🔜</td>
+</tr>
+<tr>
+<td>Overlay stress tester</td>
+<td>Stress trades for spot, vol, time</td>
+<td>🔜</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="phase-6-dashboards-reporting">📊 Phase 6: Dashboards &amp; Reporting</h2>
+<table>
+<thead>
+<tr>
+<th>Task</th>
+<th>Description</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dash/Streamlit dashboard</td>
+<td>View macro data, signals, live trades</td>
+<td>🔄</td>
+</tr>
+<tr>
+<td>Regime monitor panel</td>
+<td>Track current macro backdrop live</td>
+<td>🔜</td>
+</tr>
+<tr>
+<td>Daily signal report</td>
+<td>Auto-generate HTML/PDF summary</td>
+<td>🔜</td>
+</tr>
+<tr>
+<td>Trade tracker</td>
+<td>Show open/closed trades, P&amp;L, Greeks</td>
+<td>🔜</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="phase-7-process-automation-feedback-loop">🧠 Phase 7: Process Automation &amp; Feedback Loop</h2>
+<table>
+<thead>
+<tr>
+<th>Task</th>
+<th>Description</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Logging &amp; changelogs</td>
+<td>Git-versioned changelog for signals, trades, data</td>
+<td>🔄</td>
+</tr>
+<tr>
+<td>Journal integration</td>
+<td>Link daily notes to trades/signals</td>
+<td>🔜</td>
+</tr>
+<tr>
+<td>Post-trade analysis</td>
+<td>Evaluate what worked, what didn’t</td>
+<td>🔜</td>
+</tr>
+<tr>
+<td>Weekly wrap-up script</td>
+<td>Summary of trades, signals, macro shifts</td>
+<td>🔜</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="versioning">🔄 Versioning</h2>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Goals</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>v0.1</strong></td>
+<td>MVP pipeline: macro + fundamental signal → backtest → dashboard</td>
+</tr>
+<tr>
+<td><strong>v0.2</strong></td>
+<td>Full long/short portfolio structuring and macro regime overlays</td>
+</tr>
+<tr>
+<td><strong>v0.3</strong></td>
+<td>Options structuring engine fully integrated with trade planner</td>
+</tr>
+<tr>
+<td><strong>v1.0</strong></td>
+<td>Complete live workflow: macro filter → trade idea → structured trade → tracked and reviewed</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="notes">🔚 Notes</h2>
+<ul>
+<li>Built by and for DLM — designed to replicate and scale my own thought process</li>
+<li>Modular by design — each layer can be swapped, upgraded, or extended</li>
+<li>Focused on edge: only build what enhances signal clarity, speed, or risk-adjusted returns</li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../js/mathjax-config.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
