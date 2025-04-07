@@ -17,4 +17,5 @@ This module contains portfolio construction, optimization, and risk management t
 - `docs/` — Mathematical derivations and documentation (Markdown)
 - `tests/` — Unit tests
 
-This module will scale to real portfolios after initial testing.
+This module will scale to my real trading and investment portfolios after initial testing.
+
