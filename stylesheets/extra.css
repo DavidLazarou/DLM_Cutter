@@ -1,0 +1,9 @@
+mjx-container {
+  overflow-x: auto;
+  padding: 0.5em 0;
+}
+
+mjx-container[display="block"] {
+  text-align: center;
+  margin: 1em 0;
+}
